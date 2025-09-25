@@ -9,7 +9,7 @@ namespace ToDo
 
         public static object ShowTask { get; private set; }
 
-        static object Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Min Att Göra Lista");
 
@@ -32,9 +32,9 @@ namespace ToDo
                         break;
                     case MenuChoice.Exit:
                         Console.WriteLine("Tack för att du använde att göra");
-                        return
+                        return;
 
-                    default;
+                    default:
                         Console.WriteLine("OGILTIGT VAL, försök igen");
                         break;
                 }
